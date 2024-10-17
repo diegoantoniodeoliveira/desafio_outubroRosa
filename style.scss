@@ -1,0 +1,249 @@
+$hot-pink: #FF69B4;
+$light-pink: #FFD9EC;
+$light-blue: #E4EEF1;
+$black: #000000;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+  
+
+
+header{
+    width: 100%;
+    height: 118px;
+    background-color: $hot-pink;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 38px;
+       
+        a img{
+            width: 100px;
+            height: 100px;
+         }
+
+        h2{
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+            color: $light-blue;
+            font-size: 1.75rem;
+        }
+     }
+
+     nav{
+        display: flex;
+        align-items: center;
+       margin-right: 95px;
+     }
+
+    ul{
+        display: flex;
+         gap: 80px;
+         
+
+        li{
+            gap: 12px;
+            list-style: none;
+            
+        }
+        a{
+            text-decoration: none;
+            color: $light-blue;
+            font-size: 1.2rem;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+        }
+     }
+
+
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $light-pink;
+    padding: 30px;
+
+    p{
+        white-space: pre-line;
+        font-size: 1.56rem;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        color: $black;
+    }
+
+    
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    padding:30px;
+    align-items: center;
+    background-color: $hot-pink;
+
+    p{
+        white-space:pre-line;
+        font-size: 1.56rem;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        color: $light-blue;
+    }
+
+    .img-section1{
+        display: flex;
+        align-items: center;
+    }
+
+    img{
+      border-radius: 4px;
+    }
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+    padding: 30px;
+    background-color: $light-pink;
+}
+
+footer{
+    background-color: $hot-pink;
+    display: flex;
+    
+    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
+
+    .icones{
+        display: flex;
+        gap: 27px;
+
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    p{
+        color: $light-blue;
+        text-align: center;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding-bottom: 3px;
+    }
+}
+
+
+
+@media(min-width:320px) and (max-width: 500px){
+    header{
+
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0px;
+           
+            a img{
+                width: 70px;
+                height: 70px;
+             }
+    
+            h2{
+                font-size: 1rem;
+            }
+         }
+
+         nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0px;
+            margin-top: 20px;
+         }
+    
+        ul{
+            display: flex;
+            gap: 13px;
+             
+    
+            li{
+                gap: 12px;
+                list-style: none;
+                
+            }
+            a{
+                text-decoration: none;
+                color: $light-blue;
+                font-size: 1rem;
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 400;
+            }
+         }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    
+        p{
+            white-space: normal;
+            font-size: 1rem;
+            padding-bottom: 20px;
+        }
+
+        img{
+            width: 95%;
+        }
+    
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        gap: 10px;
+    
+        p{
+            white-space:normal;
+            font-size: 1rem;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+            color: $light-blue;
+        }
+        img{
+          border-radius: 4px;
+          width: 95%;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    
+}
